@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Studio — Website-uri moderne care îți dezvoltă afacerea</title>
+<meta name="description" content="Creez website-uri, landing page-uri și automatizări pentru afaceri locale și online. Design modern, rapid și orientat spre rezultate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="#home" class="logo" aria-label="Nova Studio - Acasă">
+      <span class="logo__mark">A</span>
+      <span class="logo__text">AlexDeveloper<em><br>Studio</em></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link">Acasă</a></li>
+        <li><a href="#servicii" class="nav__link">Servicii</a></li>
+        <li><a href="#portofoliu" class="nav__link">Portofoliu</a></li>
+        <li><a href="#despre" class="nav__link">Despre mine</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="#contact" class="btn btn--primary btn--sm">Solicită o ofertă</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Deschide meniul" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <p class="eyebrow">Studio independent de web design &amp; dezvoltare</p>
+        <h1 class="hero__title">
+          Construiesc website-uri moderne care îți dezvoltă afacerea.
+        </h1>
+        <p class="hero__text">
+          Ajut afaceri locale și online să aibă o prezență profesională pe internet —
+          de la primul concept de design, până la un site rapid, responsive și gândit
+          să transforme vizitatorii în clienți.
+        </p>
+        <div class="hero__actions">
+          <a href="#portofoliu" class="btn btn--primary">Vezi portofoliul</a>
+          <a href="#contact" class="btn btn--ghost">Contactează-mă</a>
+        </div>
+        <div class="hero__trust">
+          <div class="hero__trust-item"><strong>5★</strong><span>satisfacție client</span></div>
+          <div class="hero__trust-divider"></div>
+          <div class="hero__trust-item"><strong>100%</strong><span>responsive &amp; rapid</span></div>
+          <div class="hero__trust-divider"></div>
+          <div class="hero__trust-item"><strong>&lt; 48h</strong><span>timp de răspuns</span></div>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal" aria-hidden="true">
+        <div class="browser-card">
+          <div class="browser-card__bar">
+            <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            <div class="browser-card__url">novastudio.ro</div>
+          </div>
+          <div class="browser-card__body">
+            <div class="bc-nav">
+              <span class="bc-logo"></span>
+              <span class="bc-link"></span><span class="bc-link"></span><span class="bc-link short"></span>
+            </div>
+            <div class="bc-hero">
+              <div class="bc-line bc-line--lg"></div>
+              <div class="bc-line bc-line--md"></div>
+              <div class="bc-btn"></div>
+            </div>
+            <div class="bc-grid">
+              <div class="bc-box"></div>
+              <div class="bc-box"></div>
+              <div class="bc-box"></div>
+            </div>
+          </div>
+          <div class="cursor-chip" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="white"><path d="M5 2l14 7-6 2-2 6-6-15z"/></svg>
+          </div>
+        </div>
+
+        <div class="float-badge float-badge--top">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2l2.6 6.6L22 9l-5.4 4.6L18 22l-6-3.8L6 22l1.4-8.4L2 9l7.4-.4L12 2z" fill="#2563eb"/></svg>
+          <div><strong>98/100</strong><span>Performanță</span></div>
+        </div>
+        <div class="float-badge float-badge--bottom">
+          <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="10" fill="none" stroke="#2563eb" stroke-width="2"/><path d="M7 12l3 3 7-7" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><strong>100%</strong><span>Responsive</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICII ================= -->
+  <section class="section" id="servicii">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Ce pot face pentru tine</p>
+        <h2 class="section__title">Servicii</h2>
+        <p class="section__sub">Soluții complete pentru prezența ta online, de la un simplu site de prezentare până la automatizări care îți economisesc timp.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5z" stroke="#2563eb" stroke-width="1.6"/><path d="M3 9h18" stroke="#2563eb" stroke-width="1.6"/><path d="M7 6h.01" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Website-uri de prezentare</h3>
+          <p>Site-uri elegante care prezintă afacerea ta în mod profesional și îți construiesc credibilitate în fața vizitatorilor.</p>
+        </article>
+
+        <article class="card service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z" stroke="#2563eb" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Landing Page-uri</h3>
+          <p>Pagini de vânzare optimizate pentru conversii, perfecte pentru campanii publicitare și lansări de produse.</p>
+        </article>
+
+        <article class="card service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M21 12a9 9 0 1 1-3.5-7.1" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/><path d="M21 3v5h-5" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Redesign website</h3>
+          <p>Transform un site învechit într-o experiență modernă, rapidă și aliniată cu standardele actuale de design.</p>
+        </article>
+
+        <article class="card service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="#2563eb" stroke-width="1.6"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" stroke="#2563eb" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Mentenanță</h3>
+          <p>Actualizări, backup-uri și monitorizare constantă, ca site-ul tău să funcționeze impecabil în fiecare zi.</p>
+        </article>
+
+        <article class="card service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#2563eb" stroke-width="1.6"/><path d="M21 21l-4.3-4.3" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Optimizare SEO de bază</h3>
+          <p>Structură tehnică optimizată, viteză de încărcare bună și setări esențiale pentru a fi găsit pe Google.</p>
+        </article>
+
+        <article class="card service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4z" stroke="none"/><path d="M22 7 12 13 2 7" stroke="#2563eb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7z" stroke="#2563eb" stroke-width="1.6"/></svg>
+          </div>
+          <h3>Automatizări</h3>
+          <p>Email, WhatsApp și formulare inteligente care preiau lead-uri automat, fără efort suplimentar din partea ta.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DE CE SĂ LUCREZI CU MINE ================= -->
+  <section class="section section--dark" id="despre">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow eyebrow--light">Avantajele colaborării</p>
+        <h2 class="section__title section__title--light">De ce să lucrezi cu mine</h2>
+        <p class="section__sub section__sub--light">Nu livrez doar un website — construiesc un instrument care lucrează pentru afacerea ta.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="why-item reveal">
+          <div class="why-item__num">01</div>
+          <h3>Design modern</h3>
+          <p>Interfețe curate, actuale și gândite să lase o impresie premium din prima secundă.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-item__num">02</div>
+          <h3>Website rapid</h3>
+          <p>Cod optimizat și timpi de încărcare mici, esențiali pentru experiență și SEO.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-item__num">03</div>
+          <h3>Responsive</h3>
+          <p>Arată impecabil pe desktop, tabletă și telefon, indiferent de dispozitiv.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-item__num">04</div>
+          <h3>Comunicare excelentă</h3>
+          <p>Ești la curent în fiecare etapă a proiectului, fără termeni tehnici complicați.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-item__num">05</div>
+          <h3>Suport după livrare</h3>
+          <p>Rămân disponibil după lansare pentru ajustări, întrebări și mentenanță.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-item__num">06</div>
+          <h3>Soluții personalizate</h3>
+          <p>Fiecare proiect este construit de la zero, în jurul nevoilor reale ale afacerii tale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PORTOFOLIU ================= -->
+  <section class="section" id="portofoliu">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Proiecte recente</p>
+        <h2 class="section__title">Portofoliu</h2>
+        <p class="section__sub">Câteva exemple de proiecte. Înlocuiește imaginea, textul și linkul fiecărui card cu proiectul tău real — structura rămâne aceeași.</p>
+      </div>
+
+      <div class="grid grid--3 portfolio-grid">
+
+        <!-- PROIECT 1 — înlocuiește conținutul cu proiectul tău -->
+        <article class="card portfolio-card reveal">
+          <div class="portfolio-card__img mockup mockup--a" aria-hidden="true">
+            <div class="mockup__bar">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            </div>
+            <div class="mockup__body">
+              <div class="mockup__nav">
+                <span class="mk-logo"></span>
+                <span class="mk-link"></span><span class="mk-link"></span><span class="mk-link short"></span>
+              </div>
+              <div class="mockup__hero">
+                <div class="mk-line mk-line--lg"></div>
+                <div class="mk-line mk-line--sm"></div>
+                <div class="mk-btn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__body">
+            <span class="example-flag">Exemplu — adaugă proiectul tău</span>
+            <h3>Site de prezentare — Cabinet stomatologic</h3>
+            <p>Website modern pentru un cabinet medical, cu programare online și prezentare clară a serviciilor.</p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <a href="#" class="link-arrow">Vezi proiectul <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- PROIECT 2 — înlocuiește conținutul cu proiectul tău -->
+        <article class="card portfolio-card reveal">
+          <div class="portfolio-card__img mockup mockup--b" aria-hidden="true">
+            <div class="mockup__bar">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            </div>
+            <div class="mockup__body mockup__body--center">
+              <div class="mk-pill"></div>
+              <div class="mk-line mk-line--lg mk-line--center"></div>
+              <div class="mk-line mk-line--sm mk-line--center"></div>
+              <div class="mk-btn mk-btn--center"></div>
+            </div>
+          </div>
+          <div class="portfolio-card__body">
+            <span class="example-flag">Exemplu — adaugă proiectul tău</span>
+            <h3>Landing Page — Curs online de marketing</h3>
+            <p>Pagină de vânzare cu un singur scop: înscrierea la curs, optimizată pentru conversii.</p>
+            <div class="tags">
+              <span class="tag">Landing Page</span><span class="tag">SEO</span>
+            </div>
+            <a href="#" class="link-arrow">Vezi proiectul <span>→</span></a>
+          </div>
+        </article>
+
+        <!-- PROIECT 3 — înlocuiește conținutul cu proiectul tău -->
+        <article class="card portfolio-card reveal">
+          <div class="portfolio-card__img mockup mockup--c" aria-hidden="true">
+            <div class="mockup__bar">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            </div>
+            <div class="mockup__body">
+              <div class="mockup__nav">
+                <span class="mk-logo"></span>
+                <span class="mk-link"></span><span class="mk-link short"></span>
+              </div>
+              <div class="mk-product-grid">
+                <div class="mk-product"></div>
+                <div class="mk-product"></div>
+                <div class="mk-product"></div>
+                <div class="mk-product"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__body">
+            <span class="example-flag">Exemplu — adaugă proiectul tău</span>
+            <h3>Magazin online — Brand de modă</h3>
+            <p>Redesign complet al unui magazin online, cu accent pe viteză și experiență de cumpărare.</p>
+            <div class="tags">
+              <span class="tag">E-commerce</span><span class="tag">Redesign</span>
+            </div>
+            <a href="#" class="link-arrow">Vezi proiectul <span>→</span></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCES ================= -->
+  <section class="section" id="proces">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Cum lucrăm</p>
+        <h2 class="section__title">Procesul de lucru</h2>
+        <p class="section__sub">Un proces clar, de la prima discuție până la lansarea site-ului tău.</p>
+      </div>
+
+      <ol class="process">
+        <li class="process__step reveal">
+          <div class="process__num">1</div>
+          <h3>Discuție</h3>
+          <p>Înțeleg afacerea ta, obiectivele și publicul țintă printr-o discuție inițială gratuită.</p>
+        </li>
+        <li class="process__step reveal">
+          <div class="process__num">2</div>
+          <h3>Planificare</h3>
+          <p>Stabilim structura site-ului, conținutul necesar și termenele de livrare.</p>
+        </li>
+        <li class="process__step reveal">
+          <div class="process__num">3</div>
+          <h3>Design</h3>
+          <p>Creez un concept vizual personalizat, pe care îl rafinăm împreună până la varianta finală.</p>
+        </li>
+        <li class="process__step reveal">
+          <div class="process__num">4</div>
+          <h3>Dezvoltare</h3>
+          <p>Transform designul într-un website funcțional, rapid și responsive.</p>
+        </li>
+        <li class="process__step reveal">
+          <div class="process__num">5</div>
+          <h3>Lansare</h3>
+          <p>Publicăm site-ul, verificăm totul în detaliu și rămân alături de tine după lansare.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALE ================= -->
+  <section class="section section--soft" id="testimoniale">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Ce spun clienții</p>
+        <h2 class="section__title">Testimoniale</h2>
+      </div>
+
+      <div class="grid grid--2">
+        <figure class="card testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Comunicare excelentă și un site exact cum mi-am imaginat. Procesul a fost simplu, iar rezultatul a depășit așteptările.”</blockquote>
+          <figcaption>
+            <div class="avatar">AM</div>
+            <div><strong>Andreea M.</strong><span>Fondator, Studio Beauty</span></div>
+          </figcaption>
+        </figure>
+
+        <figure class="card testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>„De la prima discuție am știut că sunt pe mâini bune. Site-ul nostru nou aduce constant clienți noi.”</blockquote>
+          <figcaption>
+            <div class="avatar">RV</div>
+            <div><strong>Radu V.</strong><span>Administrator, RV Construct</span></div>
+          </figcaption>
+        </figure>
+
+        <figure class="card testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Profesionalism de la început până la final. Site-ul este rapid, modern și ușor de administrat.”</blockquote>
+          <figcaption>
+            <div class="avatar">DL</div>
+            <div><strong>Diana L.</strong><span>Marketing Manager</span></div>
+          </figcaption>
+        </figure>
+
+        <figure class="card testimonial reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Recomand cu încredere. A înțeles exact ce ne dorim și a livrat la timp, fără surprize neplăcute.”</blockquote>
+          <figcaption>
+            <div class="avatar">CT</div>
+            <div><strong>Cristian T.</strong><span>CEO, Nordic Fit</span></div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq">
+    <div class="container container--narrow">
+      <div class="section__head reveal">
+        <p class="eyebrow">Întrebări frecvente</p>
+        <h2 class="section__title">Ai întrebări?</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Cât durează realizarea unui website?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>În funcție de complexitate, un website de prezentare durează între 1 și 3 săptămâni, iar un landing page poate fi gata în câteva zile.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Cât costă un website?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Prețul depinde de tipul de proiect, numărul de pagini și funcționalitățile dorite. Îți trimit o ofertă personalizată după discuția inițială.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Mă ocup și de conținut și imagini?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Pot să te ghidez în structurarea conținutului și să recomand surse de imagini, însă textele și pozele finale sunt, de regulă, furnizate de client pentru autenticitate.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Oferi mentenanță după lansare?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Da, ofer pachete de mentenanță lunară care includ actualizări, backup-uri și mici modificări de conținut.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Site-ul va fi optimizat pentru mobil?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Da, toate site-urile sunt construite responsive, adaptate perfect pentru desktop, tabletă și mobil.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section section--dark" id="contact">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow eyebrow--light">Hai să discutăm</p>
+        <h2 class="section__title section__title--light">Solicită o ofertă</h2>
+        <p class="section__sub section__sub--light">Completează formularul sau scrie-mi direct — răspund de obicei în mai puțin de 48 de ore.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mlgywqzw" method="POST">
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Nume</label>
+              <input type="text" id="name" name="name" placeholder="Numele tău" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@exemplu.ro" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" placeholder="07xx xxx xxx">
+            </div>
+            <div class="field">
+              <label for="subject">Tip proiect</label>
+              <select id="subject" name="subject">
+                <option value="">Selectează</option>
+                <option value="website">Website de prezentare</option>
+                <option value="landing">Landing page</option>
+                <option value="redesign">Redesign website</option>
+                <option value="mentenanta">Mentenanță</option>
+                <option value="altele">Altele</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Mesaj</label>
+            <textarea id="message" name="message" rows="5" placeholder="Spune-mi câteva detalii despre proiectul tău..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">Trimite mesajul</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+
+        <div class="contact-info reveal">
+          <a class="contact-info__item" href="mailto:webdevelopment.webdesign20@gmail.com">
+            <span class="contact-info__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18v12H3z" stroke="#fff" stroke-width="1.5"/><path d="M3 6l9 7 9-7" stroke="#fff" stroke-width="1.5"/></svg>
+            </span>
+            <div><strong>Email</strong><span>webdevelopment.webdesign20@gmail.com</span></div>
+          </a>
+
+          <a class="contact-info__item" href="tel:+400 734 920 485">
+            <span class="contact-info__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6A2 2 0 0 1 22 16.9z" stroke="#fff" stroke-width="1.5"/></svg>
+            </span>
+            <div><strong>Telefon</strong><span>+40 734 920 485</span></div>
+          </a>
+
+          <a class="contact-info__item" href="https://wa.me/40734920485" target="_blank" rel="noopener">
+            <span class="contact-info__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M20.5 11.9a8.4 8.4 0 0 1-12.3 7.4L4 20l.8-4a8.4 8.4 0 1 1 15.7-4.1z" stroke="#fff" stroke-width="1.5"/></svg>
+            </span>
+            <div><strong>WhatsApp</strong><span>Scrie-mi rapid</span></div>
+          </a>
+
+          <a class="contact-info__item" href="https://github.com/Alexandru Stefanescu" target="_blank" rel="noopener">
+            <span class="contact-info__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1-1.5-1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.2-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.2-.5-1.3.1-2.7 0 0 .8-.3 2.7 1a9.3 9.3 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.4.2 2.5.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7 1 .7 2v3c0 .3.2.6.7.5A10 10 0 0 0 12 2z" stroke="#fff" stroke-width="1.3" stroke-linejoin="round"/></svg>
+            </span>
+            <div><strong>GitHub</strong><span>Vezi codul proiectelor</span></div>
+          </a>
+
+          <a class="contact-info__item" href="https://linkedin.com/" target="_blank" rel="noopener">
+            <span class="contact-info__icon">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#fff" stroke-width="1.5"/><path d="M7 10v7M7 7v.01M11 17v-4.5a2 2 0 0 1 4 0V17M11 12.5V17" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+            <div><strong>LinkedIn</strong><span>Conectează-te</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#home" class="logo logo--footer">
+        <span class="logo__mark">A</span>
+        <span class="logo__text">Alex<em>Developer</em><em>Studio</em></span>
+      </a>
+      <p>Website-uri moderne, rapide și gândite să îți dezvolte afacerea.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Linkuri rapide</h4>
+      <ul>
+        <li><a href="#home">Acasă</a></li>
+        <li><a href="#servicii">Servicii</a></li>
+        <li><a href="#portofoliu">Portofoliu</a></li>
+        <li><a href="#despre">Despre mine</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Social media</h4>
+      <ul class="footer__social">
+        <li><a href="https://github.com/Alexandru Stefanescu" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://wa.me/40734920485" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:webdevelopment.webdesign20@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <p>© <span id="year"></span> Stefanescu Alexandru. Toate drepturile rezervate.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="#contact" class="fab-cta" aria-label="Solicită o ofertă">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+</a>
+
+<script>
+  /* Plasă de siguranță: dacă script.js nu reușește să ruleze din orice motiv,
+     conținutul .reveal nu trebuie să rămână invizibil la nesfârșit. */
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      document.querySelectorAll('.reveal:not(.is-visible)').forEach(function (el) {
+        el.classList.add('is-visible');
+      });
+    }, 1200);
+  });
+</script>
+<script src="style.js"></script>
+
+</body>
+</html>
